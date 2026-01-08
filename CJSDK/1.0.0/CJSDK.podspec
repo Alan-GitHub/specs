@@ -12,16 +12,17 @@
   s.source              = { :git => 'https://github.com/Alan-GitHub/pods.git', :tag => s.version.to_s }
   
   
-  # Core 子库
-  s.subspec "Core" do |core|
-    core.source_files = "Core/Classes/**/*.{h,m,swift}"
+  # CJCore 子库
+  s.subspec "CJCore" do |core|
+    core.vendored_frameworks = 'CJCore.xcframework'
+    core.source_files = "CJCore/Classes/**/*.{h,m,swift}"
   end
   
   # CJPayment 子库
   s.subspec "CJPayment" do |payment|
     payment.vendored_frameworks = 'CJPayment.xcframework'
     payment.source_files        = 'CJPayment/Classes/**/*'
-    payment.dependency 'CJSDK/Core'
+    payment.dependency 'CJSDK/CJCore'
     
     # payment.resource_bundles = {
     #   'CJPayment' => ['CJPayment/Assets/*.png']
