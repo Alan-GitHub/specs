@@ -37,6 +37,8 @@
   s.subspec "CJAuth" do |auth|
     auth.vendored_frameworks = 'CJSDK/CJAuth.xcframework'
     auth.source_files        = 'CJAuth/Classes/**/*'
+    auth.dependency 'Firebase/Core'
+    auth.dependency 'Firebase/Auth'
     auth.dependency 'CJSDK/CJCore'
   end
 
