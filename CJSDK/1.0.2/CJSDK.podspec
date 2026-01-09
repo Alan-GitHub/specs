@@ -16,6 +16,9 @@
   s.subspec "CJCore" do |core|
     core.vendored_frameworks = 'CJSDK/CJCore.xcframework'
     core.source_files = "CJCore/Classes/**/*.{h,m,swift}"
+    core.dependency 'Moya'
+    core.dependency 'DeviceKit'
+    core.dependency 'SnapKit'
   end
   
   # CJPayment 子库
