@@ -8,7 +8,7 @@
   s.homepage         = 'https://github.com/Alan-GitHub/pods'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Alan' => '584840653@qq.com' }
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
   s.source              = { :git => 'https://github.com/Alan-GitHub/pods.git', :tag => s.version.to_s }
   
   
