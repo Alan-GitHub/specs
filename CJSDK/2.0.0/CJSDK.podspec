@@ -47,7 +47,7 @@
     auth.source_files        = 'CJAuth/Classes/**/*'
     auth.dependency 'Firebase/Core'
     auth.dependency 'Firebase/Auth'
-    auth.dependency 'CJCore'
+    auth.dependency 'CJSDK/CJCore'
     auth.dependency 'FBSDKLoginKit', '~> 16.0'
     auth.dependency 'TwitterKit'
     auth.dependency 'WRSignInWithApple'
@@ -58,10 +58,10 @@
   
   # CJService 子库
   s.subspec "CJService" do |service|
-    service.vendored_frameworks = 'CJSDK/CJCore.xcframework'
-    service.source_files = 'CJCore/Classes/**/*'
+    service.vendored_frameworks = 'CJSDK/CJService.xcframework'
+    service.source_files = 'CJService/Classes/**/*'
     service.dependency 'TZImagePickerController'
-    service.dependency 'CJCore'
+    service.dependency 'CJSDK/CJCore'
     service.dependency 'YYText-swift'
     service.dependency 'MJRefresh'
     service.dependency 'JXPhotoBrowser'
